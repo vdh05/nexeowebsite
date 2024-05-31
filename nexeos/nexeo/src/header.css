@@ -1,0 +1,96 @@
+/* General Styles for Navbar */
+
+.navbar {
+  width: 100%;  /* Maintains full width for responsiveness */
+  background-color: white;  /* Sets navbar background to black */
+  padding: 80px;
+  box-shadow: 0 2px 4px #0000001a;
+ 
+}
+
+.navbar-content
+{
+  display: none;
+}
+
+.navbar.sticky {
+  position: sticky;
+  top: 0;
+}
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 800px;/* Pushes nav links to the right side */
+}
+
+.nav-link {
+  margin-left: 14px;
+  text-decoration: none;
+  color: black;  /* Sets text color to white for black background */
+  font-size: 15px;
+  padding-top: 15px;
+  width: 100px;
+}
+
+.navbar
+{
+  width: 100%;
+}
+
+.nav-link:hover,.nav-link.active {
+  background-color: black;
+  height: 40px;
+  width: 100px;
+  color:white;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 15px;
+  justify-content: center;
+  /* Removed hover styles as they're not needed */
+}
+
+/* Specific Styles for "Home" Section */
+.home-container {
+  /* Target the relevant container in your Home component's CSS */
+  margin: 0 auto;  /* Centers the "Home" section horizontally */
+  padding: 80px;  /* Adjust padding as needed */
+  background-color: inherit;  /* Inherits the background color from its parent (.navbar) */
+}
+@media(max-width:500px)
+{
+  .nav-link
+  {
+    display: none;
+
+  }
+
+  
+}
+@media (max-width: 1024px) {
+ .nav-link
+ {
+  display: none;
+ }
+
+ .navbar {
+  width: 100%;  /* Maintains full width for responsiveness */
+  padding: 60px;
+  background-color: black;  /* Sets navbar background to black */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar.sticky {
+  position: sticky;
+  top: 0;
+}
+
+
+}

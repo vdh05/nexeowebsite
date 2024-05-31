@@ -1,0 +1,342 @@
+@media screen and (max-width:1290px) 
+{
+ 
+  .n-logo {
+    position: absolute;
+    left: 0px;
+    width: 90px; /* Adjust width and height as needed */
+    height: 90px; /* Adjust width and height as needed */
+    opacity: 0; /* Initially hide the logo */
+    animation: n-show 0.5s ease-in forwards; /* Animation for logo reveal */
+    margin-top: 25px;    
+  }
+
+  .e-logo
+  {
+    position:absolute;
+    left:10px;
+    padding-left: 20px;
+    width:90px;
+    height: 90px;
+    opacity:0;
+    animation:e-show 0.5s ease-in forwards;
+    margin-top: 25px;    
+  }
+  .x-logo
+  {
+    position:absolute;
+    
+    width:90px;
+    height: 90px;
+    opacity:0;
+    padding-left: 90px;
+    animation:x-show 0.5s ease-in forwards;
+    animation-delay: 1s;
+    left: -10px;
+     margin-left: -40px;
+     margin-top: 25px;    
+    }
+  .e1-logo
+  {
+    position:absolute;
+    width:87px;
+    height:87px;
+    opacity:0;
+    padding-left: 140px;
+    animation:x-show 0.5s ease-in forwards;
+    animation-delay: 1.5s;
+    left: -10px;
+     margin-left: -40px;
+     margin-top: 25px;    
+  }
+  .O-logo
+  {
+    position:absolute;
+    margin-top: 25px;    
+    width:87px;
+    height: 87px;
+    opacity:0;
+    padding-left: 180px;
+    animation:x-show 0.5s ease-in forwards;
+    animation-delay: 2.5s;
+    left: -10px;
+     margin-left: -40px;
+       }
+
+  .text {
+    position: relative; /* Overlap the text on the logo */
+    display: inline-block;
+    font-size: 50px; /* Adjust font size as needed */
+    animation: text-slide 0.7s ease-in-out forwards; /* Animation for text slide-in */
+    animation-delay: 0.5s; /* Delay text animation to start after logo reveal */
+    
+   
+  }
+
+
+  
+  @keyframes n-show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+          
+    }
+  }
+  
+  @keyframes e-show {
+    from {
+      opacity: 0;
+      transform: translateX(-50px); /* Move from left by 50px */
+    
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Move to original position */
+      
+    }
+  }
+
+  @keyframes x-show {
+    from {
+      opacity: 0;
+      transform: translateX(-70px); /* Move from left by 50px */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(50px); /* Move to original position */
+      
+    }
+  }
+  @keyframes e1-show {
+    from {
+      opacity: 0;
+      transform: translateX(-70px); /* Move from left by 50px */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(50px); /* Move to original position */
+      
+    }
+  }
+
+  @keyframes text-slide {
+    0% {
+      transform: translateX(100%);
+  
+    }
+    100% {
+      transform: translateX(0);
+    
+    }
+  }
+  .animation-container {
+    position: fixed;  /* Make the container fixed for a sticky effect */
+
+  }
+  
+  .animation-container.sticky {  /* Styles for the sticky state */
+    animation: sticky-animation 5s ease infinite; /* Add an animation for a subtle effect */
+  }
+  
+  @keyframes sticky-animation {
+    0% {
+      transform: translate(-50%, -50%) scale(1); /* Start at default size */
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.05); /* Slightly increase size at midpoint */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1); /* Return to default size */
+    }
+  }
+  
+  .animated-logo {  /* Styles for the logo animation (optional) */
+    animation: logo-animation 2s ease-in-out infinite;  /* Add your desired logo animation */
+  }
+  
+  @keyframes logo-animation {  /* Example logo animation (replace with your animation) */
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  
+}
+.n-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px; /* Adjust width and height as needed */
+    height: 70px; /* Adjust width and height as needed */
+    opacity: 0; /* Initially hide the logo */
+    animation: n-show 0.5s ease-in forwards; /* Animation for logo reveal */
+    
+  }
+
+  .e-logo
+  {
+    position:absolute;
+    top:10px;
+    left:10px;
+    padding-left: 40px;
+    width:60px;
+    height: 50px;
+    opacity:0;
+    animation:e-show 0.5s ease-in forwards;
+    
+  }
+  .x-logo
+  {
+    position:absolute;
+    top:0;
+    width:70px;
+    height: 70px;
+    opacity:0;
+    padding-left: 90px;
+    animation:x-show 0.5s ease-in forwards;
+    animation-delay: 1s;
+    left: -10px;
+     margin-left: -40px;
+     
+    }
+  .e1-logo
+  {
+    position:absolute;
+    top:10px;
+    width:60px;
+    height:50px;
+    opacity:0;
+    padding-left: 140px;
+    animation:x-show 0.5s ease-in forwards;
+    animation-delay: 1.5s;
+    left: -10px;
+     margin-left: -40px;
+     
+  }
+  .O-logo
+  {
+    position:absolute;
+    top:0;
+    width:70px;
+    height: 70px;
+    opacity:0;
+    padding-left: 180px;
+    animation:x-show 0.5s ease-in forwards;
+    animation-delay: 2.5s;
+    left: -10px;
+     margin-left: -40px;
+       }
+
+  .text {
+    position: relative; /* Overlap the text on the logo */
+    display: inline-block;
+    font-size: 50px; /* Adjust font size as needed */
+    animation: text-slide 0.7s ease-in-out forwards; /* Animation for text slide-in */
+    animation-delay: 0.5s; /* Delay text animation to start after logo reveal */
+    
+   
+  }
+
+
+  
+  @keyframes n-show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+          
+    }
+  }
+  
+  @keyframes e-show {
+    from {
+      opacity: 0;
+      transform: translateX(-50px); /* Move from left by 50px */
+    
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Move to original position */
+      
+    }
+  }
+
+  @keyframes x-show {
+    from {
+      opacity: 0;
+      transform: translateX(-70px); /* Move from left by 50px */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(50px); /* Move to original position */
+      
+    }
+  }
+  @keyframes e1-show {
+    from {
+      opacity: 0;
+      transform: translateX(-70px); /* Move from left by 50px */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(50px); /* Move to original position */
+      
+    }
+  }
+
+  @keyframes text-slide {
+    0% {
+      transform: translateX(100%);
+  
+    }
+    100% {
+      transform: translateX(0);
+    
+    }
+  }
+  .animation-container {
+    position: fixed;  /* Make the container fixed for a sticky effect */
+
+  }
+  
+  .animation-container.sticky {  /* Styles for the sticky state */
+    animation: sticky-animation 5s ease infinite; /* Add an animation for a subtle effect */
+  }
+  
+  @keyframes sticky-animation {
+    0% {
+      transform: translate(-50%, -50%) scale(1); /* Start at default size */
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.05); /* Slightly increase size at midpoint */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1); /* Return to default size */
+    }
+  }
+  
+  .animated-logo {  /* Styles for the logo animation (optional) */
+    animation: logo-animation 2s ease-in-out infinite;  /* Add your desired logo animation */
+  }
+  
+  @keyframes logo-animation {  /* Example logo animation (replace with your animation) */
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  

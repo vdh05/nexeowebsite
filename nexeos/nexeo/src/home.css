@@ -1,0 +1,368 @@
+.home-container
+{
+  width: 110vw;
+  height: auto;
+  background-color: aqua;
+}
+
+.child
+{
+  flex:2 2 400px;
+}
+
+.child:first-child
+{
+  background-color: orange; 
+   height:fit-content;
+   width: fit-content;
+   padding-top: 20%;
+   padding-bottom: 20%;
+      
+}
+
+.child:last-child
+{
+  background:red;
+  background-size: auto;
+}
+.parent
+{
+  width:110vw;
+  height:125vh;
+  display: flex;
+  gap:2px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+
+
+.navbar {
+  width: 100%;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.home-title {
+  display: flex;
+  align-items: center;
+  padding-left: 110px;
+  padding-bottom: 150px;
+  font-family: 'monospace';
+  font-weight: 100;
+  font-size: medium;
+  flex-direction: row;
+  width: max-content;
+}
+
+.sub-title {
+  width: max-content;
+  background-color: #000000;
+  font-size: 45px;
+  color: yellow;
+  border-radius: 20px;
+  text-align: center;
+
+  position: absolute;
+}
+
+.typed-text {
+  position: relative;
+  top: 20px;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid yellow;
+  width: fit-content;
+  align-items: center;
+}
+
+.img {
+  height: 200px;
+  width: 200px;
+  padding-left: 0%;
+}
+
+
+
+.cybertext {
+  display: flex;
+  align-items: right;
+  padding-left: 850px;
+  flex-direction: row;
+  font-size: 45px;
+}
+
+.img2 {
+  width: 300px;
+  height: 300px;
+}
+
+.responsive-text {
+  font-size: 45px;
+  text-align: right;
+  position: relative;
+  margin: auto;
+  padding-left: auto;
+}
+
+.responsive-subtext {
+  font-size: 35px;
+  text-align: right;
+  margin: auto;
+  position: relative;
+  padding-left: auto;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.blink {
+  position: relative;
+  animation: blink 0.5s step-end infinite;
+  top: 100%;
+  transform: translateY(-50%);
+  right: 0;
+  animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* Responsive styles for screens with max width 500px */
+
+  @media screen and (max-width: 1290px) {
+ 
+    .home-container {
+    
+      height: auto;
+      
+       
+    }
+  
+    .navbar{
+      width: -webkit-fill-available;
+      height: 90px;
+      background-color: white;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+  }
+  
+    .navbar-content {
+      max-width: 150px;
+      padding: 0 10px;
+    }
+  
+    .home-title {
+      padding-left: 5px;
+      padding-bottom: 5px;
+      font-size: medium;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .sub-title {
+      font-size: 25px;
+      padding-left: 10px;
+      padding-bottom: 15px;
+      padding-right: 10px;
+    }
+  
+    .img {
+      height: 20px;
+      width: 20px;
+    }
+  
+  
+    .img2 {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .responsive-text,
+    .responsive-subtext {
+      font-size: 15px;
+      text-align: center;
+      padding-left: 0;
+    }
+   
+    .logo-img {
+      width: 60px; /* Set width to 60px or adjust as needed */
+    }
+  }
+  
+
+@media screen and (max-width:1000px)
+{
+  .navbar{
+    width: -webkit-fill-available;
+    height: 90px;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+}
+  
+
+
+.navbar {
+  width: 100%;
+  background-color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+
+
+.home-title {
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+  padding-bottom: 150px;
+  font-family: 'monospace';
+  font-weight: 100;
+  font-size: medium;
+  flex-direction: row;
+  width: max-content;
+   
+
+}
+
+
+.sub-title {
+  
+  /* Other styles for text within sub-title */
+  width: max-content;
+  background-color: #000000;
+  font-size: 45px;
+  color: yellow;
+  border-radius: 20px;
+  text-align: center;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+}
+
+
+
+
+.img {
+  
+  height: 300px; /* Adjust image height (optional) */
+  width: 300px; /* Adjust image width (optional) */
+  
+}
+
+.cybertext
+{
+  display: flex;
+  align-items: right;
+  padding-left: 850px;
+  flex-direction: row;
+  font-size:45px ;
+}
+
+.img2
+{
+  width:300px;
+  height: 300px;
+}
+
+.sub-title {
+  /* Existing styles for sub-title */
+  position: absolute; /* Needed for absolute positioning of typed text */
+  
+}
+
+.typed-text {
+  /* Styles for the typing effect text (optional) */
+  position: relative; /* Overlap the sub-title element */
+  top: 20px; /* Align to top of sub-title */
+  left: 0; /* Align to left of sub-title */
+  overflow: hidden; /* Hide overflow to create typing effect */
+  white-space: nowrap; /* Prevent wrapping to single line */
+  border-right: 2px solid yellow; /* Typing cursor animation */
+  width: fit-content; /* Adjust width based on text content */
+  align-items: center;
+  
+  
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.blink { /* Blinking cursor animation (optional) */
+  position: relative; /* Position within sub-title element */
+  animation: blink 0.5s step-end infinite;
+  top: 100%; /* Align to middle vertically */
+  transform: translateY(-50%); /* Center vertically */
+  
+
+  right: 0; /* Position at the right end */
+  animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 0; } /* Cursor always visible */
+  50% { opacity: 1; }
+}
+.responsive-text {
+  font-size: 45px;
+  text-align: right;
+  position: relative;
+  margin:auto;
+  padding-left: auto;
+
+}
+
+.responsive-subtext {
+  font-size: 35px;
+  text-align:right;
+  margin:auto;
+  position: relative;
+  padding-left: auto;
+}
+

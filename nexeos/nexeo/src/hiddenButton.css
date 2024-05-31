@@ -1,0 +1,47 @@
+/* HiddenButton.css */
+.hidden-button {
+    display: none; /* Initially hide the button */
+    position: fixed; /* Position the button relative to the viewport */
+    top: 20px; /* Distance from the top edge of the viewport */
+    left: 950px;
+    z-index: 1000;     
+}
+  li
+  {
+    display: none;
+  }
+@media (max-width:500px) 
+{
+  .hidden-button{
+  display: block;
+  font-size: 96px;
+  top: 20px; /* Distance from the top edge of the viewport */
+  left: 950px;
+    
+}
+li
+{
+  display:block;
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+
+  
+}
+  
+  @media (max-width: 1024px) {
+    .hidden-button {
+      display: block; /* Show button on screens smaller than 1024px */
+      font-size: 96px;
+      background: none;
+      border: none;
+    cursor: pointer;
+    
+    position: fixed; /* Position the button relative to the viewport */
+  top: 20px; /* Distance from the top edge of the viewport */
+  left: 950px;
+  z-index: 1000; /* Ensure the button is above other elements */
+    }
+  }
+  
